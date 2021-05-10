@@ -3,7 +3,7 @@
 
 const int n = 4;
 
-void fillingArray(int (&arr)[n][n], int n){
+void fillingArray(float (&arr)[n][n], int n){
   for(int i = 0; i < n; i++){
     for(int j = 0; j < n; j++){      
       std::cin >> arr[i][j];
@@ -11,7 +11,7 @@ void fillingArray(int (&arr)[n][n], int n){
   }
 }
 
-void print(int (&arr)[n][n], int n){
+void print(float (&arr)[n][n], int n){
   for(int i = 0; i < n; i++){
     for(int j = 0; j < n; j++){
       std::cout << arr[i][j];
@@ -23,7 +23,7 @@ void print(int (&arr)[n][n], int n){
 int main(){
   std::cout << "Diagonal_matrix" << std::endl;
 
-  int arr_1[n][n];
+  float arr_1[n][n];
   std::cout << "Matrix" << std::endl;
   fillingArray(arr_1, n);
   std::cout << std::endl;  
